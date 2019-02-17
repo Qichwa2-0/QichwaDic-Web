@@ -1,0 +1,53 @@
+{
+  "main": {
+    "title": "Qichwa simitaqi",
+    "seeDictionaries": "Simitaqikunata qawaykuy",
+    "availableDictionaries": "Simitaqikuna",
+    "qichwaName": "Qichwa"
+  },
+  "searchTypes": [
+    { "id": 0, "name": "Maskana simiyuq" },
+    { "id": 1, "name": "Kaqlla" },
+    { "id": 2, "name": "Qallariq" },
+    { "id": 3, "name": "Tukuq" }
+  ],
+  "result": {
+    "noResults": "Manam imatapas tarirqaykuchu",
+    "resultsFor": "Tarisqakuna: ",
+    "loading": "Suyariykuy",
+    "pleaseWait": "Suyariykuy",
+    "paginatePrev": "Ñaw.",
+    "paginateNext": "Ham."
+  },
+  "langOptions": [
+    { "code": "es", "name": "Kastillanu" },
+    { "code": "en", "name": "Inlis" },
+    { "code": "fr", "name": "Ransis" },
+    { "code": "de", "name": "Aliman" },
+    { "code": "it", "name": "Italiyanu" }
+  ],
+  "footer": {
+    "createdBy": "Paqarichiq:",
+    "compilatedBy": "Simitaqi huñuykuq:",
+    "developedBy": "Qispichiq:",
+    "dictSourcesLink": "Simitakunamanta qawaykuy"
+  },
+  "dictLangs": [
+    { "code": "all", "name": "Llapantin" },
+    { "code": "qu", "name": "Qichwa" },
+    { "code": "es", "name": "Kastillanu" },
+    { "code": "en", "name": "Inlis" },
+    { "code": "fr", "name": "Ransis" },
+    { "code": "de", "name": "Aliman" },
+    { "code": "it", "name": "Italiyanu" }
+  ],
+  "dictionarySection": {
+    "mainText":
+      "QichwaDic'qa achka simitaqikunawanmi llamkan. Kay simitaqikunaqa kachkanmi {0}'pa huñusqan, hinallataqmi {1} paginamantapas utaq {2}'pa huñusqanpas.",
+    "thanks": "Llamkasqankutam riqsikullayku.",
+    "author": "Ruraq:",
+    "description": "Simitaqi:",
+    "totalEntries": "Haykap simikunan:",
+    "compilator": "Huñuq / Dihitalyachiq:"
+  }
+}

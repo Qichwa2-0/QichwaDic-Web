@@ -1,0 +1,53 @@
+{
+  "main": {
+    "title": "Dictionnaire de Quechua",
+    "seeDictionaries": "Voir les dictionnaires disponibles",
+    "availableDictionaries": "Dictionnaires disponibles",
+    "qichwaName": "Quechua"
+  },
+  "langOptions": [
+    { "code": "es", "name": "Espagnol" },
+    { "code": "en", "name": "Anglais" },
+    { "code": "fr", "name": "Français" },
+    { "code": "de", "name": "Allemand" },
+    { "code": "it", "name": "Italien" }
+  ],
+  "searchTypes": [
+    { "id": 0, "name": "Contient" },
+    { "id": 1, "name": "Mot exacte" },
+    { "id": 2, "name": "Commence par" },
+    { "id": 3, "name": "Finit par" }
+  ],
+  "result": {
+    "noResults": "Aucun resultat trouvé",
+    "resultsFor": "Resultats pour",
+    "loading": "En cours de traitement",
+    "pleaseWait": "Veuillez patienter",
+    "paginatePrev": "Préc.",
+    "paginateNext": "Suiv."
+  },
+  "footer": {
+    "createdBy": "Un projet de",
+    "compilatedBy": "Dictionnaires compilés par",
+    "developedBy": "Devéloppé par",
+    "dictSourcesLink": "Auteurs et sources des dictionnaires"
+  },
+  "dictLangs": [
+    { "code": "all", "name": "Tous" },
+    { "code": "qu", "name": "Quechua" },
+    { "code": "es", "name": "Espagnol" },
+    { "code": "en", "name": "Anglais" },
+    { "code": "fr", "name": "Français" },
+    { "code": "de", "name": "Allemand" },
+    { "code": "it", "name": "Italien" }
+  ],
+  "dictionarySection": {
+    "mainText":
+      "QichwaDic intègre des dictionnaires compilés et/ou numérisés par {0}, {1} et {2}.",
+    "thanks": "Nous sommes réconnaissants pour leur travail.",
+    "author": "Auteur :",
+    "description": "Description :",
+    "totalEntries": "Nombre d'entrées :",
+    "compilator": "Compilateur :"
+  }
+}

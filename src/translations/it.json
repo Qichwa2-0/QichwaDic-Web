@@ -1,0 +1,46 @@
+{
+  "main": {
+    "title": "Dizionario multi-dialettale di Quechua",
+    "seeDictionaries": "Vedere i dizionari disponibili",
+    "availableDictionaries": "Dizionari disponibili",
+    "qichwaName": "Quechua"
+  },
+  "searchTypes": [
+    { "id": 0, "name": "Contiene" },
+    { "id": 1, "name": "Esatto" },
+    { "id": 2, "name": "Comincia con" },
+    { "id": 3, "name": "Finisce con" }
+  ],
+  "result": {
+    "noResults": "Nessun risultato trovato",
+    "resultsFor": "Risultati per"
+  },
+  "langOptions": [
+    { "code": "es", "name": "Spagnolo" },
+    { "code": "en", "name": "Inglese" },
+    { "code": "fr", "name": "Francese" },
+    { "code": "de", "name": "Tedesco" },
+    { "code": "it", "name": "Italiano" }
+  ],
+  "footer": {
+    "createdBy": "Un progetto di",
+    "compilatedBy": "Dizionari di",
+    "developedBy": "Sviluppato da",
+    "dictSourcesLink": "Autori e fonti dei dizionari"
+  },
+  "dictLangs": [
+    { "code": "all", "name": "Tutti" },
+    { "code": "qu", "name": "Quechua" },
+    { "code": "es", "name": "Spagnolo" },
+    { "code": "en", "name": "Inglese" },
+    { "code": "fr", "name": "Francese" },
+    { "code": "de", "name": "Tedesco" },
+    { "code": "it", "name": "Italiano" }
+  ],
+  "dictionarySection": {
+    "author": "Autore",
+    "description": "Descricizione",
+    "totalEntries": "Totale di lemme",
+    "compilator": "Huñuq"
+  }
+}

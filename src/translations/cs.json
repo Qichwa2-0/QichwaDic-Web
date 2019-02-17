@@ -1,0 +1,49 @@
+{
+  "main": {
+    "title": "Multidialektální slovník kečuánštiny",
+    "seeDictionaries": "Zobrazit dostupné slovníky",
+    "availableDictionaries": "Dostupné slovníky",
+    "qichwaName": "Kečuánština"
+  },
+  "searchTypes": [
+    { "id": 0, "name": "Obsahuje" },
+    { "id": 1, "name": "Přesná shoda" },
+    { "id": 2, "name": "Začíná na" },
+    { "id": 3, "name": "Končí na" }
+  ],
+  "result": {
+    "noResults": "Nenalezeny žádné výsledky",
+    "resultsFor": "Výsledky hledání"
+  },
+  "langOptions": [
+    { "code": "es", "name": "Španělština" },
+    { "code": "en", "name": "Angličtina" },
+    { "code": "fr", "name": "Francouzština" },
+    { "code": "de", "name": "Němčina" },
+    { "code": "it", "name": "Italština" }
+  ],
+  "footer": {
+    "createdBy": "Projekt",
+    "compilatedBy": "Slovníky byly sesbírány\\na digitalizovány sdružením",
+    "developedBy": "Autor aplikace:",
+    "dictSourcesLink": "Autoři a zdroje slovníků"
+  },
+  "dictLangs": [
+    { "code": "all", "name": "Všechny" },
+    { "code": "qu", "name": "Kečuánština" },
+    { "code": "es", "name": "Španělština" },
+    { "code": "en", "name": "Angličtina" },
+    { "code": "fr", "name": "Francouzština" },
+    { "code": "de", "name": "Němčina" },
+    { "code": "it", "name": "Italština" }
+  ],
+  "dictionarySection": {
+    "mainText":
+      "QichwaDic slučuje slovníky shromážděné a/nebo digitalizované sdružením {0}, {1} a {2}.",
+    "thanks": "Děkujeme jim za jejich práci.",
+    "author": "Autor :",
+    "description": "Popis :",
+    "totalEntries": "Počet hesel :",
+    "compilator": "Digitalizace :"
+  }
+}

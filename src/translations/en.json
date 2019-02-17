@@ -1,0 +1,53 @@
+{
+  "main": {
+    "title": "Dictionary for Quechua language",
+    "seeDictionaries": "See available dictionaries",
+    "availableDictionaries": "Available dictionaries",
+    "qichwaName": "Quechua"
+  },
+  "searchTypes": [
+    { "id": 0, "name": "Contains" },
+    { "id": 1, "name": "Exact" },
+    { "id": 2, "name": "Starts with" },
+    { "id": 3, "name": "Ends with" }
+  ],
+  "result": {
+    "noResults": "No results found",
+    "resultsFor": "Results for",
+    "loading": "Loading",
+    "pleaseWait": "Please wait",
+    "paginatePrev": "Prev.",
+    "paginateNext": "Next"
+  },
+  "langOptions": [
+    { "code": "es", "name": "Spanish" },
+    { "code": "en", "name": "English" },
+    { "code": "fr", "name": "French" },
+    { "code": "de", "name": "German" },
+    { "code": "it", "name": "Italian" }
+  ],
+  "footer": {
+    "createdBy": "A project by",
+    "compilatedBy": "Dictionaries compilated by",
+    "developedBy": "Developed by",
+    "dictSourcesLink": "Authors and sources of the dictionaries"
+  },
+  "dictLangs": [
+    { "code": "all", "name": "All" },
+    { "code": "qu", "name": "Quechua" },
+    { "code": "es", "name": "Spanish" },
+    { "code": "en", "name": "English" },
+    { "code": "fr", "name": "French" },
+    { "code": "de", "name": "German" },
+    { "code": "it", "name": "Italian" }
+  ],
+  "dictionarySection": {
+    "mainText":
+      "QichwaDic integrates dictionaries recopilated and/or digitized by {0}, {1} and {2}.",
+    "thanks": "We acknowledge them for their work.",
+    "author": "Author:",
+    "description": "Description:",
+    "totalEntries": "Entries count:",
+    "compilator": "Compilator:"
+  }
+}
