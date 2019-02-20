@@ -8,8 +8,15 @@
           </router-link>
         </div>
         <div class="pull-right">
-          <v-select id="select-language" class="language-selector cursor-pointer" v-model="$i18n.locale"
-                    :options="languages" options-value="code" options-label="name" justified close-on-select></v-select>
+          <v-select id="select-language"
+                    class="language-selector cursor-pointer"
+                    v-model="$i18n.locale"
+                    :options="languages"
+                    options-value="code"
+                    options-label="name"
+                    justified
+                    close-on-select>
+          </v-select>
         </div>
       </div>
     </div>
@@ -26,8 +33,12 @@
         <p class="text-center margin-top-xl">
           <i18n path="dictionarySection.mainText">
             <strong>Asociación ILLA</strong>
-            <a href="http://runasimi.de" target="_blank" rel="noreferrer noopener"><strong>Runasimi.de</strong></a>
-            <a href="https://www.qichwa.net" target="_blank" rel="noreferrer noopener"><strong>Qichwa 2.0</strong></a>
+            <a href="http://runasimi.de" target="_blank" rel="noreferrer noopener">
+              <strong>Runasimi.de</strong>
+            </a>
+            <a href="https://www.qichwa.net" target="_blank" rel="noreferrer noopener">
+              <strong>Qichwa 2.0</strong>
+            </a>
           </i18n>
           <br>
           <strong>{{ $t('dictionarySection.thanks') }}</strong>
@@ -37,23 +48,31 @@
     <div class="row margin-top-md">
       <div class="col-xs-6 col-sm-4 col-centered text-center">
         <spinner ref="spinner" v-model="spinner" size="lg" fixed :text="$t('result.pleaseWait')"></spinner>
-        <v-select id="select-dict-type" class="btn-block v-select text-center" :options="langOptions"
-                  options-label="name" options-value="code" v-model="dictionaryType">
+        <v-select id="select-dict-type"
+                  class="btn-block v-select text-center"
+                  :options="langOptions"
+                  options-label="name"
+                  options-value="code"
+                  v-model="dictionaryType">
         </v-select>
       </div>
     </div>
     <div class="row margin-top-lg">
       <div class="col-xs-12 col-sm-10 col-centered">
         <div id="dictionaries-container">
-          <div class="panel panel-primary dictionary-item" v-for="(dictionary) in currentDictionaries"
-               :key="dictionary.id" :class="currentDictionaries.length === 1 ? 'single' : ''">
+          <div v-for="(dictionary) in currentDictionaries"
+               class="panel panel-primary dictionary-item"
+               :key="dictionary.id"
+               :class="currentDictionaries.length === 1 ? 'single' : ''">
             <div class="panel-heading"> {{ dictionary.name }} </div>
             <div class="panel-body">
               <p><strong>{{ $t("dictionarySection.author") }}</strong> {{ dictionary.author }}</p>
               <p><strong>{{ $t("dictionarySection.description") }}</strong> {{ dictionary.description }}</p>
               <p><strong>{{ $t("dictionarySection.totalEntries") }}</strong> {{ dictionary.totalEntries }}</p>
               <p><strong>{{ $t("dictionarySection.compilator") }}</strong>
-                <a v-if="dictionary.compilator.url !== '#'" :href="dictionary.compilator.url" target="_blank"
+                <a v-if="dictionary.compilator.url !== '#'"
+                   :href="dictionary.compilator.url"
+                   target="_blank"
                    rel="noreferrer noopener">
                   {{ dictionary.compilator.name }}
                 </a>

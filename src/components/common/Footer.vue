@@ -8,7 +8,8 @@
         </router-link>
       </p>
       <p class="text-default">
-        &copy; 2017-2018 {{ $t("footer.developedBy") }} <a href="https://www.qichwa.net" rel="noreferrer noopener" target="_blank"><strong>Qichwa 2.0</strong></a>
+        &copy; 2017-2018 {{ $t("footer.developedBy") }}
+        <a href="https://www.qichwa.net" rel="noreferrer noopener" target="_blank"><strong>Qichwa 2.0</strong></a>
         <br/>
       <p class="footer-icons">
         <a href="https://www.facebook.com/qichwa2.0" target="_blank" rel="noopener noreferrer">
@@ -20,7 +21,9 @@
         <a href="https://www.youtube.com/channel/UCZ5kIwvo7DlN9qdrQrjUOkg" target="_blank" rel="noopener noreferrer">
           <icon name="youtube"></icon>
         </a>
-        <a href="mailto:qichwa2.0@gmail.com"><span role="button"><icon name="envelope"></icon></span></a>
+        <a href="mailto:qichwa2.0@gmail.com">
+          <span role="button"><icon name="envelope"></icon></span>
+        </a>
       </p>
     </div>
   </footer>

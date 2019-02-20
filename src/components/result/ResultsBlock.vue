@@ -13,8 +13,12 @@
             <div class="col-xs-12 col-sm-6">
               <p class="text-center lead margin-right-xl">{{ $t('result.resultsFor') }} <strong>{{word}}</strong></p>
               <div class="btn-group-sm btn-group-vertical">
-                <radio v-for="(result, index) in results" :key="result.dictionaryId" button v-model="currentResultIndex"
-                       :selected-value="index" type="success">
+                <radio v-for="(result, index) in results"
+                       :key="result.dictionaryId"
+                       button
+                       v-model="currentResultIndex"
+                       :selected-value="index"
+                       type="success">
                   {{result.dictionaryName}} <span class="badge" title="total">{{result.total}}</span>
                 </radio>
               </div>

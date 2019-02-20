@@ -6,8 +6,15 @@
         <span id="lang-swapper" @click="swapLanguages">
           <icon name="exchange" scale="1.5" class="vcenter cursor-pointer"/>
         </span>
-        <v-select id="select-foreign" class="language-selector cursor-pointer" v-model="targetLng" :options="langOptions"
-                  options-value="code" options-label="name" justified close-on-select></v-select>
+        <v-select id="select-foreign"
+                  class="language-selector cursor-pointer"
+                  v-model="targetLng"
+                  :options="langOptions"
+                  options-value="code"
+                  options-label="name"
+                  justified
+                  close-on-select>
+        </v-select>
       </div>
     </div>
     <div class="row margin-top-lg">
@@ -15,10 +22,17 @@
         <form v-on:submit.prevent="search">
           <div class="col-xs-12 no-padding-left no-padding-right">
             <div class="input-container input-group">
-              <input class="form-control" autocomplete="off" v-model="searchText" :placeholder="searchPlaceholder"
+              <input class="form-control"
+                     autocomplete="off"
+                     v-model="searchText"
+                     :placeholder="searchPlaceholder"
                      @keydown.enter="search"/>
-              <v-select class="input-group-addon v-select cursor-pointer" slot="inputAddon" :options="searchTypes"
-                        options-label="name" options-value="id" v-model="searchType">
+              <v-select class="input-group-addon v-select cursor-pointer"
+                        slot="inputAddon"
+                        :options="searchTypes"
+                        options-label="name"
+                        options-value="id"
+                        v-model="searchType">
               </v-select>
               <span slot="buttonAddon" class="input-group-btn">
                 <button class="btn btn btn-default" type="button" @click="search">
