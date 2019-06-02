@@ -58,7 +58,6 @@
     data () {
       return {
         fromQuechua: true,
-        suggestions: [],
         searchType: '',
         searchText: '',
         placeholderTexts: {'es': 'Amanecer', 'en': 'House', 'fr': 'Pierre', 'de': 'Stuhl', 'it': 'Giocare'},

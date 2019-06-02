@@ -2,13 +2,13 @@
   <footer class="footer default text-center">
     <div class="col-xs-10 col-xs-offset-1">
       <p class="margin-top-xxl">
-        <span class="text-default">{{ $t("footer.createdBy") }} <strong>Qichwa 2.0</strong></span> |
+        <span class="text-default"><strong>Qichwa 2.0</strong></span> |
         <router-link to="/dictionaries">
           {{$t('footer.dictSourcesLink')}}
         </router-link>
       </p>
       <p class="text-default">
-        &copy; 2017-2018 {{ $t("footer.developedBy") }}
+        &copy; 2017-2018
         <a href="https://www.qichwa.net" rel="noreferrer noopener" target="_blank"><strong>Qichwa 2.0</strong></a>
         <br/>
       <p class="footer-icons">
