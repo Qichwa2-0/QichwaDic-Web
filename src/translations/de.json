@@ -13,7 +13,11 @@
   ],
   "result": {
     "noResults": "Keine Ergebnisse gefunden",
-    "resultsFor": "Ergebnisse für"
+    "resultsFor": "Ergebnisse für",
+    "loading": "Wird geladen",
+    "pleaseWait": "Bitte warten",
+    "paginatePrev": "Zur.",
+    "paginateNext": "Vor."
   },
   "langOptions": [
     { "code": "es", "name": "Spanisch" },
@@ -36,5 +40,13 @@
     { "code": "fr", "name": "Französisch" },
     { "code": "de", "name": "Deutsch" },
     { "code": "it", "name": "Italienisch" }
-  ]
+  ],
+  "dictionarySection": {
+    "mainText": "QichwaDic integriert von {0}, {1} und {2} zusammengestellte und/oder digitalisierte Wörterbücher.",
+    "thanks": "Wir danken ihnen für ihren Beitrag.",
+    "author": "Autor:",
+    "description": "Beschreibung:",
+    "totalEntries": "Anzahl aller Einträge:",
+    "compilator": "Kompilator:"
+  }
 }

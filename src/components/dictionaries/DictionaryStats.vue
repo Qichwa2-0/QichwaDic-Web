@@ -69,7 +69,7 @@
               <p><strong>{{ $t("dictionarySection.author") }}</strong> {{ dictionary.author }}</p>
               <p><strong>{{ $t("dictionarySection.description") }}</strong> {{ dictionary.description }}</p>
               <p><strong>{{ $t("dictionarySection.totalEntries") }}</strong> {{ dictionary.totalEntries }}</p>
-              <p><strong>{{ $t("dictionarySection.compilator") }}</strong>
+              <p><strong>{{ $t("dictionarySection.compilator") }} </strong>
                 <a v-if="dictionary.compilator.url !== '#'"
                    :href="dictionary.compilator.url"
                    target="_blank"
@@ -102,6 +102,7 @@
           {code: 'es', name: 'Español'},
           {code: 'qus', name: 'Urin qichwa'},
           {code: 'en', name: 'English'},
+          {code: 'de', name: 'Deutsch'},
           {code: 'fr', name: 'Français'},
           {code: 'cs', name: 'Čeština'}
         ],
