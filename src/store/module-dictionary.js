@@ -22,6 +22,7 @@ export default {
                 })
             }
             state.allDictionaries = dictionariesWithCompilators(dictionaries)
+            state.groupedDictionaries = {}
             state.allDictionaries.forEach((dictionary) => {
                 if (state.groupedDictionaries[dictionary.languageBegin] !== undefined) {
                     state.groupedDictionaries[dictionary.languageBegin].push(dictionary)

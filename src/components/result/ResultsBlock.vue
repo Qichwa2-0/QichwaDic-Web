@@ -59,7 +59,7 @@
         return this.results[this.currentResultIndex]
       },
       showResults() {
-        return this.$store.getters['searchModule/hasResults']
+        return !this.$store.state.searchModule.searchError
       }
     },
     watch: {
