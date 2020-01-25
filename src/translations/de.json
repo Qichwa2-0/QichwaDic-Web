@@ -30,7 +30,8 @@
     "createdBy": "Ein projekt von",
     "compilatedBy": "Wörterbücher zusammengestellt von",
     "developedBy": "Entwickelt von",
-    "dictSourcesLink": "Autoren und Quellen der Wörterbücher"
+    "dictSourcesLink": "Autoren und Quellen der Wörterbücher",
+    "supportUs": "Unterstütze uns"
   },
   "dictLangs": [
     { "code": "all", "name": "Alle" },

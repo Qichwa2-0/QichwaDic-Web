@@ -30,7 +30,8 @@
     "createdBy": "Un proyecto de",
     "compilatedBy": "Diccionarios recopilados por",
     "developedBy": "Desarrollado por",
-    "dictSourcesLink": "Autores y fuentes de los diccionarios"
+    "dictSourcesLink": "Autores y fuentes de los diccionarios",
+    "supportUs": "Apóyanos"
   },
   "dictLangs": [
     { "code": "all", "name": "Todos" },

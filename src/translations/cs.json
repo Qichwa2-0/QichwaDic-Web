@@ -26,7 +26,8 @@
     "createdBy": "Projekt",
     "compilatedBy": "Slovníky byly sesbírány\\na digitalizovány sdružením",
     "developedBy": "Autor aplikace:",
-    "dictSourcesLink": "Autoři a zdroje slovníků"
+    "dictSourcesLink": "Autoři a zdroje slovníků",
+    "supportUs": "Podpoř nás"
   },
   "dictLangs": [
     { "code": "all", "name": "Všechny" },

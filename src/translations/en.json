@@ -30,7 +30,8 @@
     "createdBy": "A project by",
     "compilatedBy": "Dictionaries compilated by",
     "developedBy": "Developed by",
-    "dictSourcesLink": "Authors and sources of the dictionaries"
+    "dictSourcesLink": "Authors and sources of the dictionaries",
+    "supportUs": "Support us"
   },
   "dictLangs": [
     { "code": "all", "name": "All" },

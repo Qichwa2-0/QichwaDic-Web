@@ -26,7 +26,8 @@
     "createdBy": "Un progetto di",
     "compilatedBy": "Dizionari di",
     "developedBy": "Sviluppato da",
-    "dictSourcesLink": "Autori e fonti dei dizionari"
+    "dictSourcesLink": "Autori e fonti dei dizionari",
+    "supportUs": "Sosteneteci"
   },
   "dictLangs": [
     { "code": "all", "name": "Tutti" },

@@ -59,13 +59,13 @@ export default {
   data: function () {
     return {
       languages: [
-        {code: 'es', name: 'Español'},
-        {code: 'qus', name: 'Urin qichwa'},
-        {code: 'en', name: 'English'},
-        {code: 'fr', name: 'Français'},
-        {code: 'de', name: 'Deutsch', selected: false},
-        {code: 'it', name: 'Italiano'},
-        {code: 'cs', name: 'Čeština'}
+        { code: 'es', name: 'Español' },
+        { code: 'qus', name: 'Urin qichwa' },
+        { code: 'en', name: 'English' },
+        { code: 'fr', name: 'Français' },
+        { code: 'de', name: 'Deutsch', selected: false },
+        { code: 'it', name: 'Italiano' },
+        { code: 'cs', name: 'Čeština' }
       ],
       fromQuechua: false,
       spinner: false,
@@ -115,4 +115,5 @@ export default {
 #select-language{
   width: 150px;
 }
+
 </style>
