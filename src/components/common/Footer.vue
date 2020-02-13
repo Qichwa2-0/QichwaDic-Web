@@ -25,13 +25,13 @@
         <a href="mailto:qichwa2.0@gmail.com">
           <span role="button"><icon name="envelope"></icon></span>
         </a>
-        <a class="support-link" href="https://www.qichwa.net/apoyanos" target="_blank" rel="noopener noreferrer">
+        <a class="support-link" :href="this.supportLink" target="_blank" rel="noopener noreferrer">
           <icon name="heart" scale="1"/> {{ $t('footer.supportUs') }}
         </a>
       </p>
     </div>
-    <a class="btn pull-right margin-right-md support-button" href="https://www.qichwa.net/apoyanos" target="_blank" rel="noopener noreferrer">
-         {{ $t('footer.supportUs') }}  <icon name="heart" scale="1"/>
+    <a class="btn pull-right margin-right-md support-button" :href="this.supportLink" target="_blank" rel="noopener noreferrer">
+         {{ $t('footer.supportUs') }} <icon name="heart" scale="1"/>
      </a>
   </footer>
 
@@ -47,7 +47,16 @@
 
   export default {
     name: 'foot',
-    components: { 'icon': Icon }
+    components: { 'icon': Icon },
+    computed: {
+        supportLink() {
+            switch(this.$i18n.locale) {
+                case 'es': return 'https://www.qichwa.net/apoyanos';
+                case 'qus': return 'https://www.qichwa.net/qu/yanapawayku';
+                default: return 'https://www.qichwa.net/en/support-us';
+            }
+        }
+    }
   }
 </script>
 <style lang="scss">
