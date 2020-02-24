@@ -12,7 +12,7 @@ const API = {
     return axios.get(baseURL + 'words', { params })
   },
   fetchEntries: function (dictionaryId, params) {
-    return axios.get(baseURL + '/dictionaries/' + dictionaryId + '/words/fetch', { params })
+    return axios.get(baseURL + 'dictionaries/' + dictionaryId + '/words/fetch', { params })
   }
 }
 
