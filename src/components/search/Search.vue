@@ -130,6 +130,6 @@
   }
 
   .input-group-addon{
-    border: 0px;
+    border: 0;
   }
 </style>
