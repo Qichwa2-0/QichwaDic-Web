@@ -1,7 +1,7 @@
 <template>
-  <div class="panel panel-primary">
-    <div class="panel-body">
-      <spinner ref="resultSpinner" v-model="resultSpinner" size="lg" fixed :text="$t('result.loading')"></spinner>
+  <div class="card bg-light">
+    <div class="card-body">
+      <spinner ref="resultSpinner" v-model="resultSpinner" size="lg" fixed :text="$t('result.loading')"/>
       <paginate
               :page-count="Math.ceil(result.total / itemsPerPage)"
               :click-handler="pageSelected"

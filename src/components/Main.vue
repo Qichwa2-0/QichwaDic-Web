@@ -1,9 +1,10 @@
 <template>
   <div class="container-fluid body-fixed-footer">
-    <div class="row" :class="[this.hasResults ? 'margin-top-sm' : 'margin-top-md']">
-      <div>
+    <div class="row" :class="[this.hasResults ? 'mt-1' : 'mt-2']">
+      <div class="col-12">
+        <!--      <div class="float-right">-->
         <v-select id="select-language"
-                  class="language-selector cursor-pointer pull-right margin-right-sm"
+                  class="language-selector cursor-pointer float-right"
                   v-model="$i18n.locale"
                   :options="languages"
                   options-value="code"
@@ -11,39 +12,38 @@
                   justified close-on-select
                   @change="changeLocale">
         </v-select>
+        <!--    </div>-->
+        <section id="logo-header"
+                 class="col-12 col-md-10 mx-auto text-center"
+                 :class="[this.hasResults ? 'mt-1' : 'mt-2']">
+            <router-link to="/">
+              <img class="img-responsive mx-auto"
+                   :class="[this.hasResults ? 'logo-small' : 'logo']"
+                   src="/img/qichwa20-logo.png"
+                   alt="Qichwa 2.0">
+            </router-link>
+            <p class="text-center" :class="[this.hasResults ? 'h4 ' : 'h2 mt-3']">
+              <span class="text-info">{{ $t("main.title") }}</span>
+            </p>
+        </section>
       </div>
-      <section id="logo-header"
-               class="col-xs-12 col-sm-10 col-sm-offset-1"
-               :class="[this.hasResults ? 'margin-top-sm' : 'margin-top-md']">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1" >
-          <router-link to="/">
-            <img class="img-responsive center-block"
-                 :class="[this.hasResults ? 'logo-small' : 'logo']"
-                 src="/img/qichwa20-logo.png"
-                 alt="Qichwa 2.0">
-          </router-link>
-          <p class="text-center" :class="[this.hasResults ? 'h4 ' : 'h2 margin-top-xl']">
-            <span class="text-info">{{ $t("main.title") }}</span>
-          </p>
-        </div>
-      </section>
     </div>
     <div class="row">
       <router-link to="/dictionaries"
                    tag="button"
-                   class="btn btn-default center-block margin-top-xl">
+                   class="btn btn-primary mx-auto mt-3">
         {{ $t("main.seeDictionaries") }}
       </router-link>
     </div>
     <div class="row">
       <section id="search"
-               class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3"
+               class="col-10 col-md-6 mx-auto"
                :class="[this.hasResults ? 'search-section-small-margin' : 'search-section']">
-        <Search></Search>
+        <Search/>
       </section>
     </div>
     <div class="row">
-      <router-view></router-view>
+      <router-view/>
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-    <foot></foot>
+    <router-view/>
+    <foot/>
   </div>
 </template>
 
@@ -15,10 +15,9 @@
   }
 </script>
 <style lang="scss">
-  $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
-  @import '~bootswatch/flatly/variables';
-  @import '~bootstrap-sass/assets/stylesheets/_bootstrap';
-  @import '~bootswatch/flatly/bootswatch';
+  @import '~bootswatch/dist/flatly/variables';
+  @import '~bootstrap/scss/bootstrap';
+  @import '~bootswatch/dist/flatly/bootswatch';
 
   $footerHeight : 120px;
   $footer-link-color: #154257;
@@ -37,9 +36,9 @@
     bottom: 0;
     width: 100%;
     height: $footerHeight;
-    background-color: lighten($gray-lighter, 25%);
+    background-color: lighten($gray-500, 25%);
     &.inverse{
-      background-color: $navbar-inverse-bg;
+      background-color: $navbar-light-color;
     }
   }
 
@@ -48,9 +47,9 @@
     bottom: 0;
     width: 100%;
     height: $footerHeight;
-    background-color: lighten($gray-lighter, 25%);
+    background-color: lighten($gray-500, 25%);
     &.inverse{
-      background-color: $navbar-inverse-bg;
+      background-color: $navbar-light-color;
     }
   }
 

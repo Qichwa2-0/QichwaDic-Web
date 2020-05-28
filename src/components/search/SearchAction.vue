@@ -1,5 +1,5 @@
 <template>
-  <ResultsBlock :word="word" :spinner="spinner"></ResultsBlock>
+  <ResultsBlock :word="word" :spinner="spinner"/>
 </template>
 
 <script>

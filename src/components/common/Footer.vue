@@ -1,29 +1,29 @@
 <template>
   <footer class="footer default text-center">
-    <div class="col-xs-10 col-xs-offset-1">
-      <p class="margin-top-xxl">
-        <span class="text-default"><strong>Qichwa 2.0</strong></span> |
+    <div class="col-10 mx-auto">
+      <p class="mt-3">
+        <span class="text-primary"><strong>Qichwa 2.0</strong></span> |
         <router-link to="/dictionaries">
           {{$t('footer.dictSourcesLink')}}
         </router-link>
       </p>
-      <p class="text-default">
+      <p class="text-primary">
         &copy; 2017-2020
-        <a href="https://www.qichwa.net" rel="noreferrer noopener" target="_blank"><strong>Qichwa 2.0</strong></a>
+        <a href="https://www.qichwa.net" rel="noreferrer noopener" target="_blank"> <strong>Qichwa 2.0</strong></a>
         <br/>
       </p>
       <p class="footer-icons">
         <a href="https://www.facebook.com/qichwa2.0" target="_blank" rel="noopener noreferrer">
-          <icon name="facebook-f"></icon>
+          <icon name="facebook-f"/>
         </a>
         <a href="https://twitter.com/Qichwa20" target="_blank" rel="noopener noreferrer">
-          <icon name="twitter"></icon>
+          <icon name="twitter"/>
         </a>
         <a href="https://www.youtube.com/channel/UCZ5kIwvo7DlN9qdrQrjUOkg" target="_blank" rel="noopener noreferrer">
-          <icon name="youtube"></icon>
+          <icon name="youtube"/>
         </a>
         <a href="mailto:qichwa2.0@gmail.com">
-          <span role="button"><icon name="envelope"></icon></span>
+          <span role="button"><icon name="envelope"/></span>
         </a>
         <a class="support-link" :href="this.supportLink" target="_blank" rel="noopener noreferrer">
           <icon name="heart" scale="1"/> {{ $t('footer.supportUs') }}
@@ -39,9 +39,9 @@
 
 <script>
   import Icon from 'vue-awesome/components/Icon'
-  import 'vue-awesome/icons/facebook-f'
-  import 'vue-awesome/icons/twitter'
-  import 'vue-awesome/icons/youtube'
+  import 'vue-awesome/icons/brands/facebook-f'
+  import 'vue-awesome/icons/brands/twitter'
+  import 'vue-awesome/icons/brands/youtube'
   import 'vue-awesome/icons/envelope'
   import 'vue-awesome/icons/heart'
 

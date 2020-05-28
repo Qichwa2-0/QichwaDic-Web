@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-xs-12 text-center">
+      <div class="col-12 text-center">
         <div id="btn-quechua" class="language-selector form-control">{{ $t('main.qichwaName') }}</div>
         <span id="lang-swapper" @click="swapLanguages">
-          <icon name="exchange" scale="1.5" class="vcenter cursor-pointer"/>
+          <icon name="exchange-alt" scale="1.5" class="vcenter cursor-pointer"/>
         </span>
         <v-select id="select-foreign"
                   class="language-selector cursor-pointer"
@@ -17,10 +17,10 @@
         </v-select>
       </div>
     </div>
-    <div class="row margin-top-lg">
-      <div class="col-xs-12 col-centered">
+    <div class="row mt-2">
+      <div class="col-12 mx-auto">
         <form v-on:submit.prevent="search">
-          <div class="col-xs-12 no-padding-left no-padding-right">
+          <div class="col-12 px-0">
             <div class="input-container input-group">
               <input class="form-control"
                      autocomplete="off"
@@ -34,9 +34,9 @@
                         options-value="id"
                         v-model="searchType">
               </v-select>
-              <span slot="buttonAddon" class="input-group-btn">
+              <span slot="buttonAddon" class="btn-group">
                 <button class="btn btn btn-default" type="button" @click="search">
-                  <icon name="search"></icon>
+                  <icon name="search"/>
                 </button>
               </span>
             </div>
@@ -50,7 +50,7 @@
   import {select} from 'vue-strap'
   import Icon from 'vue-awesome/components/Icon'
   import 'vue-awesome/icons/search'
-  import 'vue-awesome/icons/exchange'
+  import 'vue-awesome/icons/exchange-alt'
 
   export default {
     name: 'search',

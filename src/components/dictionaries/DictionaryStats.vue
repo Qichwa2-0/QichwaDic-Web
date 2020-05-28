@@ -1,13 +1,13 @@
 <template>
   <div class="container-fluid body-fixed-footer">
-    <div class="row margin-top-md">
-      <div class="col-xs-12 ">
-        <div class="pull-left">
+    <div class="row mt-2">
+      <div class="col-12 ">
+        <div class="float-left">
           <router-link to="/">
-            <a class="form-control"><icon name="arrow-left" scale="1.1"></icon></a>
+            <a class="form-control"><icon name="arrow-left" scale="1.1"/></a>
           </router-link>
         </div>
-        <div class="pull-right">
+        <div class="float-right">
           <v-select id="select-language"
                     class="language-selector cursor-pointer"
                     v-model="$i18n.locale"
@@ -21,16 +21,16 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-12 text-center">
         <router-link to="/">
           <img class="img-responsive center-block logo" src="/img/qichwa20-logo.png" alt="Qichwa 2.0">
         </router-link>
       </div>
     </div>
     <div class="row">
-      <section class="col-xs-10 col-centered">
+      <section class="col-10 mx-auto">
         <h1 class="text-center">{{ $t("main.availableDictionaries") }}</h1>
-        <p class="text-center margin-top-xl">
+        <p class="text-center mt-3">
           <i18n path="dictionarySection.mainText">
             <strong>Asociación ILLA</strong>
             <a href="http://runasimi.de" target="_blank" rel="noreferrer noopener">
@@ -45,9 +45,9 @@
         </p>
       </section>
     </div>
-    <div class="row margin-top-md">
-      <div class="col-xs-6 col-sm-4 col-centered text-center">
-        <spinner ref="spinner" v-model="spinner" size="lg" fixed :text="$t('result.pleaseWait')"></spinner>
+    <div class="row mt-2">
+      <div class="col-6 col-md-4 mx-auto text-center">
+        <spinner ref="spinner" v-model="spinner" size="lg" fixed :text="$t('result.pleaseWait')"/>
         <v-select id="select-dict-type"
                   class="btn-block v-select text-center"
                   :options="langOptions"
@@ -57,15 +57,15 @@
         </v-select>
       </div>
     </div>
-    <div class="row margin-top-lg">
-      <div class="col-xs-12 col-sm-10 col-centered">
+    <div class="row mt-2">
+      <div class="col-12 col-md-10 mx-auto">
         <div id="dictionaries-container">
           <div v-for="(dictionary) in currentDictionaries"
-               class="panel panel-primary dictionary-item"
+               class="card bg-light dictionary-item"
                :key="dictionary.id"
                :class="currentDictionaries.length === 1 ? 'single' : ''">
-            <div class="panel-heading"> {{ dictionary.name }} </div>
-            <div class="panel-body">
+            <div class="card-header"> {{ dictionary.name }} </div>
+            <div class="card-body">
               <p><strong>{{ $t("dictionarySection.author") }}</strong> {{ dictionary.author }}</p>
               <p><strong>{{ $t("dictionarySection.description") }}</strong> {{ dictionary.description }}</p>
               <p><strong>{{ $t("dictionarySection.totalEntries") }}</strong> {{ dictionary.totalEntries }}</p>
