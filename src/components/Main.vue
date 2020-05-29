@@ -2,17 +2,14 @@
   <div class="container-fluid body-fixed-footer">
     <div class="row" :class="[this.hasResults ? 'mt-1' : 'mt-2']">
       <div class="col-12">
-        <!--      <div class="float-right">-->
-        <v-select id="select-language"
-                  class="language-selector cursor-pointer float-right"
-                  v-model="$i18n.locale"
-                  :options="languages"
-                  options-value="code"
-                  options-label="name"
-                  justified close-on-select
-                  @change="changeLocale">
-        </v-select>
-        <!--    </div>-->
+        <select id="select-language"
+                class="custom-select language-selector float-right"
+                v-model="$i18n.locale"
+                @change="changeLocale">
+          <option :key="index" v-for="(language, index) in languages" :value="language.code">
+            {{ language.name }}
+          </option>
+        </select>
         <section id="logo-header"
                  class="col-12 col-md-10 mx-auto text-center"
                  :class="[this.hasResults ? 'mt-1' : 'mt-2']">
@@ -31,7 +28,7 @@
     <div class="row">
       <router-link to="/dictionaries"
                    tag="button"
-                   class="btn btn-primary mx-auto mt-3">
+                   class="btn btn-secondary mx-auto mt-3 p-2">
         {{ $t("main.seeDictionaries") }}
       </router-link>
     </div>
@@ -51,11 +48,10 @@
 <script>
 import Search from './search/Search'
 import 'vue-awesome/icons/book'
-import { select } from 'vue-strap'
 
 export default {
   name: 'SearchBlock',
-  components: { Search, 'v-select': select },
+  components: { Search },
   data: function () {
     return {
       languages: [

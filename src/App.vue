@@ -36,18 +36,7 @@
     bottom: 0;
     width: 100%;
     height: $footerHeight;
-    background-color: lighten($gray-500, 25%);
-    &.inverse{
-      background-color: $navbar-light-color;
-    }
-  }
-
-  .footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: $footerHeight;
-    background-color: lighten($gray-500, 25%);
+    background-color: white;
     &.inverse{
       background-color: $navbar-light-color;
     }

@@ -14,13 +14,13 @@
       </p>
       <p class="footer-icons">
         <a href="https://www.facebook.com/qichwa2.0" target="_blank" rel="noopener noreferrer">
-          <icon name="facebook-f"/>
+          <icon name="brands/facebook-f"/>
         </a>
         <a href="https://twitter.com/Qichwa20" target="_blank" rel="noopener noreferrer">
-          <icon name="twitter"/>
+          <icon name="brands/twitter"/>
         </a>
         <a href="https://www.youtube.com/channel/UCZ5kIwvo7DlN9qdrQrjUOkg" target="_blank" rel="noopener noreferrer">
-          <icon name="youtube"/>
+          <icon name="brands/youtube"/>
         </a>
         <a href="mailto:qichwa2.0@gmail.com">
           <span role="button"><icon name="envelope"/></span>
@@ -30,7 +30,7 @@
         </a>
       </p>
     </div>
-    <a class="btn pull-right margin-right-md support-button" :href="this.supportLink" target="_blank" rel="noopener noreferrer">
+    <a id="support-button" class="btn float-right mr-2" :href="this.supportLink" target="_blank" rel="noopener noreferrer">
          {{ $t('footer.supportUs') }} <icon name="heart" scale="1"/>
      </a>
   </footer>
@@ -68,7 +68,7 @@
       color: inherit;
     }
   }
-  .support-button {
+  #support-button {
     position: fixed;
     right: 0;
     bottom: 10px;
@@ -77,13 +77,13 @@
   }
   
   @media (max-width: 576px) {
-    .support-button {
+    #support-button {
       display: none !important;
     }
   }
   
   @media (min-width: 576px) {
-    .support-link {
+    #support-link {
       display: none !important;
     }
   }
