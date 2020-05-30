@@ -6,39 +6,38 @@
         <span id="lang-swapper" @click="swapLanguages">
           <icon name="exchange-alt" scale="1.5" class="vcenter cursor-pointer"/>
         </span>
-        <v-select id="select-foreign"
-                  class="language-selector cursor-pointer"
-                  v-model="targetLng"
-                  :options="langOptions"
-                  options-value="code"
-                  options-label="name"
-                  justified
-                  close-on-select>
-        </v-select>
+        <select v-model="targetLng" class="custom-select language-selector">
+          <option :key="index"
+                  v-for="(targetLang, index) in langOptions"
+                  :value="targetLang.code">
+            {{ targetLang.name }}
+          </option>
+        </select>
       </div>
     </div>
     <div class="row mt-2">
       <div class="col-12 mx-auto">
         <form v-on:submit.prevent="search">
           <div class="col-12 px-0">
-            <div class="input-container input-group">
-              <input class="form-control"
+            <div class="input-group">
+              <input  id="input-search"
+                      class="form-control"
                      autocomplete="off"
                      v-model="searchText"
                      :placeholder="searchPlaceholder"
                      @keydown.enter="search"/>
-              <v-select class="input-group-addon v-select cursor-pointer"
-                        slot="inputAddon"
-                        :options="searchTypes"
-                        options-label="name"
-                        options-value="id"
-                        v-model="searchType">
-              </v-select>
-              <span slot="buttonAddon" class="btn-group">
-                <button class="btn btn btn-default" type="button" @click="search">
+              <select id="search-type-selector" class="custom-select" v-model="searchType">
+                <option :key="index"
+                        v-for="(searchType, index) in searchTypes"
+                        :value="searchType.id">
+                  {{ searchType.name }}
+                </option>
+              </select>
+              <div class="input-group-append">
+                <button class="btn btn btn-secondary" type="button" @click="search">
                   <icon name="search"/>
                 </button>
-              </span>
+              </div>
             </div>
           </div>
         </form>
@@ -47,14 +46,13 @@
   </div>
 </template>
 <script>
-  import {select} from 'vue-strap'
   import Icon from 'vue-awesome/components/Icon'
   import 'vue-awesome/icons/search'
   import 'vue-awesome/icons/exchange-alt'
 
   export default {
     name: 'search',
-    components: {'v-select': select, 'icon': Icon},
+    components: { 'icon': Icon },
     data () {
       return {
         fromQuechua: true,
@@ -110,14 +108,6 @@
   }
 </script>
 <style lang="scss" scoped>
-
-  .v-select{
-    padding: 0;
-    width: 30%;
-    &>div.dropdown-toggle{
-      border: 1px solid #e8e8e8 !important;
-    }
-  }
 
   .language-selector{
     width: 40%;

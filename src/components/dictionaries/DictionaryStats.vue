@@ -8,15 +8,13 @@
           </router-link>
         </div>
         <div class="float-right">
-          <v-select id="select-language"
-                    class="language-selector cursor-pointer"
-                    v-model="$i18n.locale"
-                    :options="languages"
-                    options-value="code"
-                    options-label="name"
-                    justified
-                    close-on-select>
-          </v-select>
+          <select id="select-language"
+                    class="custom-select language-selector"
+                    v-model="$i18n.locale">
+            <option :key="index" v-for="(language, index) in languages" :value="language.code">
+              {{ language.name }}
+            </option>
+          </select>
         </div>
       </div>
     </div>
@@ -47,24 +45,24 @@
     </div>
     <div class="row mt-2">
       <div class="col-6 col-md-4 mx-auto text-center">
-        <spinner ref="spinner" v-model="spinner" size="lg" fixed :text="$t('result.pleaseWait')"/>
-        <v-select id="select-dict-type"
-                  class="btn-block v-select text-center"
-                  :options="langOptions"
-                  options-label="name"
-                  options-value="code"
-                  v-model="dictionaryType">
-        </v-select>
+        <Spinner :visible="spinner" :message="$t('result.pleaseWait')"/>
+        <select id="select-dict-type"
+                class="custom-select d-block mx-auto"
+                v-model="dictionaryType">
+          <option :key="index" v-for="(dictLangOption, index) in langOptions" :value="dictLangOption.code">
+            {{ dictLangOption.name }}
+          </option>
+        </select>
       </div>
     </div>
     <div class="row mt-2">
       <div class="col-12 col-md-10 mx-auto">
         <div id="dictionaries-container">
           <div v-for="(dictionary) in currentDictionaries"
-               class="card bg-light dictionary-item"
+               class="card bg-white dictionary-item"
                :key="dictionary.id"
                :class="currentDictionaries.length === 1 ? 'single' : ''">
-            <div class="card-header"> {{ dictionary.name }} </div>
+            <div class="card-header bg-primary text-light"> {{ dictionary.name }} </div>
             <div class="card-body">
               <p><strong>{{ $t("dictionarySection.author") }}</strong> {{ dictionary.author }}</p>
               <p><strong>{{ $t("dictionarySection.description") }}</strong> {{ dictionary.description }}</p>
@@ -87,14 +85,14 @@
 </template>
 
 <script>
-  import {select, spinner} from 'vue-strap'
   import Icon from 'vue-awesome/components/Icon'
   import 'vue-awesome/icons/home'
   import 'vue-awesome/icons/arrow-left'
+  import Spinner from "../common/Spinner";
 
   export default {
     name: 'DictionaryStats',
-    components: { 'v-select': select, 'icon': Icon, spinner },
+    components: {Spinner, 'icon': Icon },
     data: function () {
       return {
         dictionaries: {},
@@ -114,7 +112,8 @@
     created () {
       this.spinner = true
       this.checkLocale()
-      this.$store.dispatch('dictionaryModule/fetchDictionaries').then(() => this.spinner = false)
+      this.$store.dispatch('dictionaryModule/fetchDictionaries')
+              .then(() => this.spinner = false)
     },
     computed: {
       currentDictionaries() {

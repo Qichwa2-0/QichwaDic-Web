@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid body-fixed-footer">
-    <div class="row" :class="[this.hasResults ? 'mt-1' : 'mt-2']">
+    <div class="row mt-2">
       <div class="col-12">
         <select id="select-language"
                 class="custom-select language-selector float-right"
@@ -10,6 +10,11 @@
             {{ language.name }}
           </option>
         </select>
+      </div>
+    </div>
+    <div class="row" :class="[this.hasResults ? 'mt-1' : 'mt-2']">
+      <div class="col-12">
+
         <section id="logo-header"
                  class="col-12 col-md-10 mx-auto text-center"
                  :class="[this.hasResults ? 'mt-1' : 'mt-2']">
@@ -64,7 +69,6 @@ export default {
         { code: 'cs', name: 'Čeština' }
       ],
       fromQuechua: false,
-      spinner: false,
       showResults: false,
       showDictionaries: false,
       totalResults: 0

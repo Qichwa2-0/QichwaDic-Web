@@ -112,5 +112,17 @@
     height: 3em;
     width: auto;
   }
+
+  .spinner-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9998;
+    background: rgba(255, 255, 255, 0.9);
+  }
     
 </style>
