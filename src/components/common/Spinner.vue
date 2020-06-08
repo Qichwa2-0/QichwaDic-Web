@@ -1,6 +1,6 @@
 <template>
     <div v-show="this.visible" class="spinner-container">
-        <div class="spiner-wrapper m-auto">
+        <div class="spinner-wrapper m-auto">
             <div class="spinner-border text-info" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
