@@ -4,7 +4,7 @@
       <template v-if="showResults">
         <template v-if="results.length === 0">
           <p class="text-center text-primary mt-3">
-            <strong><icon class="vcenter" name="frown-open"/></strong> {{ $t('result.noResults') }}
+            <strong><icon class="vcenter" name="frown-open" color="darkgray"/></strong> {{ $t('result.noResults') }}
           </p>
         </template>
         <template v-else>
@@ -55,7 +55,7 @@
         return this.results[this.currentResultIndex]
       },
       showResults() {
-        return !this.$store.state.searchModule.searchError
+        return !this.$store.state.searchModule.searchError && !this.spinner
       }
     },
     methods: {
