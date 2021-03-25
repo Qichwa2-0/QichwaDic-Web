@@ -25,7 +25,6 @@ export default {
                 }
                 return e
             })
-            console.log('executing setResults')
         }
     },
     actions: {
