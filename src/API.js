@@ -8,7 +8,7 @@ const API = {
     })
   },
   searchDefinitions: function (searchCriteria) {
-    let params = Object.assign({}, { all: 1}, searchCriteria)
+    let params = Object.assign({}, searchCriteria)
     return axios.get(baseURL + 'words', { params })
   },
   fetchEntries: function (dictionaryId, params) {

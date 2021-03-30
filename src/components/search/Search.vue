@@ -34,7 +34,7 @@
                 </option>
               </select>
               <div class="input-group-append">
-                <button class="btn btn btn-secondary" type="button" @click="search">
+                <button class="btn btn btn-secondary" type="submit">
                   <icon name="search"/>
                 </button>
               </div>
@@ -83,16 +83,26 @@
     },
     methods: {
       search: function () {
+        const hasQueryChanged = (newQuery) => {
+          const prevQuery = this.$route.query
+          return prevQuery.word !== newQuery.word
+                  || prevQuery.fromQuechua !== newQuery.fromQuechua
+                  || prevQuery.target !== newQuery.target
+                  || prevQuery.type !== newQuery.type
+        }
         if (this.searchText !== undefined && this.searchText.length > 0 && this.searchText.indexOf('%') === -1) {
-          this.$router.push({
-            path: 'search',
-            query: {
-              word: this.searchText,
-              fromQuechua: this.fromQuechua ? 1 : 0,
-              target: this.targetLng,
-              type: this.searchType
-            }
-          })
+          const newQuery = {
+            word: this.searchText,
+            fromQuechua: this.fromQuechua ? "1" : "0",
+            target: this.targetLng,
+            type: `${this.searchType}`
+          }
+          if(hasQueryChanged(newQuery)) {
+            this.$router.push({
+              path: 'search',
+              query: newQuery
+            })
+          }
         }
       },
       swapLanguages: function () {

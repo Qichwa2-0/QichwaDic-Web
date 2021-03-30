@@ -31,10 +31,8 @@
       </div>
     </div>
     <div class="row">
-      <router-link to="/dictionaries"
-                   tag="button"
-                   class="btn btn-secondary mx-auto mt-3 p-2">
-        {{ $t("main.seeDictionaries") }}
+      <router-link to="/dictionaries" class="btn btn-secondary mx-auto mt-3 p-2">
+          {{ $t("main.seeDictionaries") }}
       </router-link>
     </div>
     <div class="row">

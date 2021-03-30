@@ -23,7 +23,7 @@ export default {
   methods: {
     searchDefinitions () {
       this.spinner = true
-      let params = { searchWord: this.word, fromQuechua: this.fromQuechua ? 1 : 0, target: this.target, searchType: this.type }
+      let params = { searchWord: this.word, fromQuechua: this.fromQuechua, target: this.target, searchType: this.type }
       this.$store.dispatch('searchModule/searchDefinitions', params).then(() => this.spinner = false)
     }
   }
