@@ -8,22 +8,7 @@ export default {
     },
     mutations: {
         setDictionaries(state, dictionaries) {
-            const dictionariesWithCompilators = function(dictionaries) {
-                var getCompilator = function (author) {
-                    const AUTHOR_TAYLOR = 'Gerald Taylor'
-                    const AUTHOR_RUNASIMI_DE = 'Philip Jacobs - runasimi.de'
-                    const AUTHOR_MINEDU_EC = 'Ministerio de Educación del Ecuador'
-                    if (AUTHOR_TAYLOR === author || AUTHOR_MINEDU_EC === author)
-                        return { name: 'Qichwa 2.0', url: 'https://www.qichwa.net' }
-                    if (AUTHOR_RUNASIMI_DE === author) return { name: AUTHOR_RUNASIMI_DE, url: 'http://runasimi.de' }
-                    else return { name: 'Asociación ILLA-A', url: '#' } // ILLA's website is not working
-                }
-                return dictionaries.map(function (dictionary) {
-                    dictionary['compilator'] = getCompilator(dictionary.author)
-                    return dictionary
-                })
-            }
-            state.allDictionaries = dictionariesWithCompilators(dictionaries)
+            state.allDictionaries = dictionaries
             state.groupedDictionaries = {}
             state.allDictionaries.forEach((dictionary) => {
                 if (state.groupedDictionaries[dictionary.languageBegin] !== undefined) {

@@ -67,14 +67,7 @@
               <p><strong>{{ $t("dictionarySection.author") }}</strong> {{ dictionary.author }}</p>
               <p><strong>{{ $t("dictionarySection.description") }}</strong> {{ dictionary.description }}</p>
               <p><strong>{{ $t("dictionarySection.totalEntries") }}</strong> {{ dictionary.totalEntries }}</p>
-              <p><strong>{{ $t("dictionarySection.compilator") }} </strong>
-                <a v-if="dictionary.compilator.url !== '#'"
-                   :href="dictionary.compilator.url"
-                   target="_blank"
-                   rel="noreferrer noopener">
-                  {{ dictionary.compilator.name }}
-                </a>
-                <strong v-else>{{ dictionary.compilator.name }}</strong>
+              <p><strong>{{ $t("dictionarySection.compilator") }} </strong> {{ dictionary.compilator }}
               </p>
             </div>
           </div>
