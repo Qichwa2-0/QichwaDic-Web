@@ -62,9 +62,6 @@ export default {
         { code: 'qus', name: 'Urin qichwa' },
         { code: 'en', name: 'English' },
         { code: 'fr', name: 'Français' },
-        { code: 'de', name: 'Deutsch', selected: false },
-        { code: 'it', name: 'Italiano' },
-        { code: 'cs', name: 'Čeština' }
       ],
       fromQuechua: false,
       showResults: false,

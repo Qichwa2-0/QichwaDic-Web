@@ -85,17 +85,15 @@
 
   export default {
     name: 'DictionaryStats',
-    components: {Spinner, 'icon': Icon },
+    components: { Spinner, 'icon': Icon },
     data: function () {
       return {
         dictionaries: {},
         languages: [
-          {code: 'es', name: 'Español'},
-          {code: 'qus', name: 'Urin qichwa'},
-          {code: 'en', name: 'English'},
-          {code: 'de', name: 'Deutsch'},
-          {code: 'fr', name: 'Français'},
-          {code: 'cs', name: 'Čeština'}
+          { code: 'es', name: 'Español' },
+          { code: 'qus', name: 'Urin qichwa' },
+          { code: 'en', name: 'English' },
+          { code: 'fr', name: 'Français' },
         ],
         dictionaryType: 'all',
         allDictionaries: [],
