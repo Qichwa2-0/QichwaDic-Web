@@ -8,16 +8,13 @@
         </router-link>
       </p>
       <p class="text-primary">
-        &copy; 2017-2020
+        &copy; 2017-{{currentYear}}
         <a href="https://www.qichwa.net" rel="noreferrer noopener" target="_blank"> <strong>Qichwa 2.0</strong></a>
         <br/>
       </p>
       <p class="footer-icons">
         <a href="https://www.facebook.com/qichwa2.0" target="_blank" rel="noopener noreferrer">
           <icon name="brands/facebook-f"/>
-        </a>
-        <a href="https://twitter.com/Qichwa20" target="_blank" rel="noopener noreferrer">
-          <icon name="brands/twitter"/>
         </a>
         <a href="https://www.youtube.com/channel/UCZ5kIwvo7DlN9qdrQrjUOkg" target="_blank" rel="noopener noreferrer">
           <icon name="brands/youtube"/>
@@ -30,9 +27,6 @@
         </a>
       </p>
     </div>
-    <a id="support-button" class="btn float-right mr-2" :href="this.supportLink" target="_blank" rel="noopener noreferrer">
-         {{ $t('footer.supportUs') }} <icon name="heart" scale="1"/>
-     </a>
   </footer>
 
 </template>
@@ -47,6 +41,11 @@
 
   export default {
     name: 'foot',
+    data() {
+      return {
+        currentYear: new Date().getFullYear()
+      }
+    },
     components: { 'icon': Icon },
     computed: {
         supportLink() {
@@ -55,7 +54,7 @@
                 case 'qus': return 'https://www.qichwa.net/qu/yanapawayku';
                 default: return 'https://www.qichwa.net/en/support-us';
             }
-        }
+        },
     }
   }
 </script>
@@ -66,25 +65,6 @@
     }
     a:not(.support-link) {
       color: inherit;
-    }
-  }
-  #support-button {
-    position: fixed;
-    right: 0;
-    bottom: 10px;
-    color: white;
-    background-color: darkgreen;
-  }
-  
-  @media (max-width: 576px) {
-    #support-button {
-      display: none !important;
-    }
-  }
-  
-  @media (min-width: 576px) {
-    #support-link {
-      display: none !important;
     }
   }
 </style>
