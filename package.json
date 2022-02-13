@@ -1,35 +1,34 @@
 {
   "name": "qichwadic-web",
   "version": "1.2.0",
-  "private": true,
-  "description": "Dictionaries for quechua language",
-  "author": "Ocramr <https://github.com/ocramr>",
+  "description": "",
+  "author": "Qichwa 2.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": ">=0.19.2",
-    "bootstrap": "^4.5.0",
-    "bootstrap-vue": "^2.15.0",
-    "bootswatch": "^4.5.0",
+    "axios": ">=0.26.0",
+    "bootstrap": "^4.6.1",
+    "bootstrap-vue": "^2.21.2",
+    "bootswatch": "^4.6.1",
     "sass-loader": "^8.0.2",
-    "vue": "^2.6.11",
+    "vue": "^2.6.14",
     "vue-awesome": "^4.0.2",
-    "vue-i18n": "^8.18.1",
-    "vue-router": "^3.3.1",
-    "vuex": "^3.4.0"
+    "vue-i18n": "^8.27.0",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.12",
-    "@vue/cli-plugin-eslint": "^4.5.12",
-    "@vue/cli-service": "^4.5.12",
+    "@vue/cli-plugin-babel": "^4.5.15",
+    "@vue/cli-plugin-eslint": "^4.5.15",
+    "@vue/cli-service": "^4.5.15",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
-    "sass": "^1.32.13",
-    "vue-template-compiler": "^2.6.11",
+    "sass": "^1.49.7",
+    "vue-template-compiler": "^2.6.14",
     "websocket-extensions": ">=0.1.4"
   },
   "eslintConfig": {
