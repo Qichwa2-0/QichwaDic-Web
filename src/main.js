@@ -5,7 +5,6 @@ import Vuex from 'vuex'
 import VueI18n from 'vue-i18n'
 import { BootstrapVue } from 'bootstrap-vue'
 
-
 import messages from './translations/translations'
 import buildRouter from './router'
 import buildStore from './store/store'
