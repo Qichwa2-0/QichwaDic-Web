@@ -38,8 +38,6 @@
               <strong>Qichwa 2.0</strong>
             </a>
           </i18n>
-          <br>
-          <strong>{{ $t('dictionarySection.thanks') }}</strong>
         </p>
       </section>
     </div>
